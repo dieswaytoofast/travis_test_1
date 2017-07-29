@@ -1,0 +1,12 @@
+sudo: required
+dist: trusty
+
+before_instal:
+  - sudo apt-get update -qqy
+  - sudo apt-get install software-properties-common
+  - sudo apt-add-repository ppa:ansible/ansible
+  - sudo apt-get update -qqy
+  - sudo curl -L git.io/weave -o /usr/local/bin/weave
+  - sudo chmod a+x /usr/local/bin/weave
+  - sudo weave launch
+  
