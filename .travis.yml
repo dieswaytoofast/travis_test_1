@@ -1,7 +1,6 @@
 sudo: required
 dist: trusty
 
-
 before_install:
   - sudo apt-get update -qqy
   - sudo apt-get install software-properties-common
