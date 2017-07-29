@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 
-before_instal:
+before_install:
   - sudo apt-get update -qqy
   - sudo apt-get install software-properties-common
   - sudo apt-add-repository ppa:ansible/ansible
